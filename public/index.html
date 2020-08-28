@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <title>Hello Vue</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body><noscript><strong>We're sorry but my example doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+<div id="app">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <router-link class="navbar-brand" to="/">Events</router-link>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/members">Members</router-link>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- route outlet -->
+    <!-- component matched by the route will render here -->
+    <router-view></router-view>
+</div>
+
+<!-- plugin will insert js here by default -->
+</body>
+</html>
